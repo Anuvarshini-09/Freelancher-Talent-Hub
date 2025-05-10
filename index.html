@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TalentBridge Freelance Platform</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="logo">
+        <span class="logo-icon">💼</span>
+        <span class="logo-text">TalentBridge</span>
+      </div>
+      
+      <nav class="desktop-nav">
+        <div class="nav-item has-tooltip">
+          <a href="findwork.html">Find Projects</a>
+          <div class="tooltip">Browse Available Projects</div>
+        </div>
+        <div class="nav-item has-tooltip">
+          <a href="hiretalent.html">Find Talent</a>
+          <div class="tooltip">Discover Skilled Freelancers</div>
+        </div>
+        <a href="#" class="nav-item">How It Works</a>
+      </nav>
+      
+      <div class="auth-buttons">
+        <button class="btn-login">Log In</button>
+        <button class="btn-signup">Sign Up</button>
+      </div>
+      
+      <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">☰</button>
+    </div>
+  </header>
+
+  <div class="mobile-menu">
+    <button class="close-menu" onclick="toggleMobileMenu()">✕</button>
+    <nav>
+      <a href="#">Find Projects</a>
+      <a href="#">Find Talent</a>
+      <a href="#">How It Works</a>
+      <hr>
+      <button class="btn-login-mobile">Log In</button>
+      <button class="btn-signup-mobile">Sign Up</button>
+    </nav>
+  </div>
+
+  <div class="mobile-menu-overlay" onclick="toggleMobileMenu()"></div>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Connect with Top Talent & <span>Exciting Projects</span></h1>
+        <p>Join thousands of freelancers and businesses building successful projects together</p>
+        <div class="hero-buttons">
+          <a class="btn-primary" href="findwork.html">Find Work</a>
+          <a class="btn-secondary" href="hiretalent.html">Hire Talent</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="how-it-works">
+      <div class="container">
+        <h2>How It Works</h2>
+        <div class="steps">
+          <div class="step">
+            <div class="step-number">1</div>
+            <h3>Create Profile</h3>
+            <p>Build your professional profile and showcase your skills</p>
+          </div>
+          <div class="step">
+            <div class="step-number">2</div>
+            <h3>Find Projects</h3>
+            <p>Browse and apply to projects that match your expertise</p>
+          </div>
+          <div class="step">
+            <div class="step-number">3</div>
+            <h3>Get Hired</h3>
+            <p>Connect with clients and start working on exciting projects</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    function toggleMobileMenu() {
+      document.body.classList.toggle('mobile-menu-open');
+    }
+  </script>
+</body>
+</html>
